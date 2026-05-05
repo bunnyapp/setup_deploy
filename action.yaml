@@ -43,7 +43,7 @@ runs:
       if: github.event_name == 'release'
       id: setup_release
       run: |
-        echo "CLUSTERS=[\"bunny-production-shard-01\"]" >> $GITHUB_OUTPUT
+        echo "CLUSTERS=[\"bunny-production-shard-01\",\"bunny-production-shard-03\"]" >> $GITHUB_OUTPUT
         echo "TYPE=deploy_to_prod" >> $GITHUB_OUTPUT
         echo "NICE_TYPE=Deploy to Production" >> $GITHUB_OUTPUT
 
